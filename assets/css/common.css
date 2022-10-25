@@ -1,8 +1,19 @@
-body {
-    background: url('../img/background.png') no-repeat;
-    background-size: 100%;
+.container {
+    background-image: url(../img/background.png);
     font-family: 'Montserrat';
     font-style: normal;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container__content {
+    height: calc(100vh - 104px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 48px;
 }
 
 .footer {
@@ -10,4 +21,5 @@ body {
     font-size: 14px;
     line-height: 26px;
     color: #FFFFFF;
+    text-align: center;
 }

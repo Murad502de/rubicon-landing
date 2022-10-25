@@ -1,13 +1,22 @@
 .content {
-
+    flex: 1;
 }
 
 .content__description {
+    height: 100%;
+    width: 442px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     color: #FFFFFF;
 }
+
 .content__objects {
     display: flex;
     flex-direction: row;
@@ -17,13 +26,8 @@
     align-items: center;
 
 }
-.content__socials {
 
-
-}
-
-
-
+.content__socials {}
 
 .content_shops {
     display: flex;

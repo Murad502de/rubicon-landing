@@ -20,7 +20,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: max-content;
+    width: 60%;
 }
 
 .navbar--list__item {
@@ -34,13 +34,18 @@
     opacity: 0.8;
 }
 
+.navbar--list__item--link {
+    color: inherit;
+}
+
 .navbar--list__item_first {}
+
 .navbar--list__item_second {
-    margin-left: 59px;
+    /* margin-left: 59px; */
 }
 .navbar--list__item_third {
-    margin-left: 59px;
+    /* margin-left: 59px; */
 }
 .navbar--list__item_fourth {
-    margin-left: 87px;
+    /* margin-left: 87px; */
 }

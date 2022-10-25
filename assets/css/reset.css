@@ -115,7 +115,6 @@ section {
 body {
     line-height: 1;
     font-family: Mulish, sans-serif;
-    min-width: 1200px;
     overflow-x: auto !important;
 }
 
