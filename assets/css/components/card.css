@@ -8,9 +8,7 @@
     background: #FFFFFF;
     border-radius: 21px;
     width: 246px;
-    height: 70px;
-    margin: 36px;
-    
+    height: 70px;   
 }
 
 .card__title {
@@ -26,3 +24,8 @@
     margin-top: 8px;
 }
 
+@media (max-width:767px) {
+    .card{
+        margin-top: 26px;
+    }
+}
