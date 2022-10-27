@@ -24,12 +24,15 @@
     align-content: center;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.content__socials {}
+.content__socials {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
 
-.content_shops {
+.content__shops {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -37,3 +40,26 @@
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .content__shops {
+        flex-direction: column-reverse;
+    }
+
+    .content__description {
+        display: none;
+    }
+
+    .content__socials {
+        margin-bottom: 22px;
+        margin-top: 60px;
+    }
+
+    .content__objects {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

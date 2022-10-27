@@ -21,3 +21,9 @@
 .card__img {
     margin-top: 8px;
 }
+
+@media (max-width:767px) {
+    .card {
+        margin-top: 26px;
+    }
+}
