@@ -11,41 +11,66 @@
     <link href="./assets/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/common.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/footer.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/components/menu.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/css//components/navbar.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/css//components/card.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/css//components/social.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/components/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/components/card.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/components/social.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/components/slider.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="container">
-    <header>
-        <div class="navbar">
-            <ul class="navbar--list">
-                <li class="navbar--list__item navbar--list__item_first">
-                    <a class="navbar--list__item--link" href="#">
-                        Коллекция на OZON
-                    </a>
-                </li>
-                <li class="navbar--list__item navbar--list__item_second">
-                    <a class="navbar--list__item--link" href="#">
-                        <img src="./assets/img/rubicon_logo (1).png">
-                    </a>
-                </li>
-                <li class="navbar--list__item navbar--list__item_third">
-                    <a class="navbar--list__item--link" href="#">
-                        Коллекция на Wildberries
-                    </a>
-                </li>
-                <li class="navbar--list__item navbar--list__item_fourth">
-                    <a class="navbar--list__item--link" href="#">
-                        Связаться с нами
-                    </a>
-                </li>
-            </ul>
+    <div class="slider">
+        <div class="slides">
+            <input id="slide-1" type="radio" name="slides" checked></input>
+            <section class="slide slide-one"></section>
+
+            <input id="slide-2" type="radio" name="slides"></input>
+            <section class="slide slide-two"></section>
+
+            <input id="slide-3" type="radio" name="slides"></input>
+            <section class="slide slide-three"></section>
+
+            <input id="slide-4" type="radio" name="slides"></input>
+            <section class="slide slide-four"></section>
         </div>
-    </header>
+
+        <div class="slider__labels">
+            <label id="1" class="slider__label slider__label_clicked" for="slide-1" onclick="setSlide(1)"></label>
+            <label id="2" class="slider__label" for="slide-2" onclick="setSlide(2)"></label>
+            <label id="3" class="slider__label" for="slide-3" onclick="setSlide(3)"></label>
+            <label id="4" class="slider__label" for="slide-4" onclick="setSlide(4)"></label>
+        </div>
+    </div>
 
     <div class="container__content">
+        <header>
+            <div class="navbar">
+                <ul class="navbar--list">
+                    <li class="navbar--list__item navbar--list__item_first">
+                        <a class="navbar--list__item--link" href="#">
+                            Коллекция на OZON
+                        </a>
+                    </li>
+                    <li class="navbar--list__item navbar--list__item_second">
+                        <a class="navbar--list__item--link" href="#">
+                            <img src="./assets/img/rubicon_logo (1).png">
+                        </a>
+                    </li>
+                    <li class="navbar--list__item navbar--list__item_third">
+                        <a class="navbar--list__item--link" href="#">
+                            Коллекция на Wildberries
+                        </a>
+                    </li>
+                    <li class="navbar--list__item navbar--list__item_fourth">
+                        <a class="navbar--list__item--link" href="#">
+                            Связаться с нами
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
         <main class="content">
             <div class="content__description">
                 Краткий рассказ о бренде и его преимуществах, где и когда основан и т.д.
@@ -78,7 +103,14 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous">
+        </script>
+    <script src="./js/slider.js"></script>
+    <script>
+        window.onload = (event) => {
+            setInterval(setSlideAutomatic, 30000);
+        };
+    </script>
 </body>
 
 </html>
