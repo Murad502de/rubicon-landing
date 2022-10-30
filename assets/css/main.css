@@ -41,7 +41,15 @@
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+.content__shops .card {
+    margin-left: 48px;
+}
+
+.content__shops .card:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 850px) {
     .content__socials {
         margin-bottom: 22px;
         margin-top: 60px;
