@@ -1,21 +1,27 @@
 .content {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
     padding: 0 48px;
+    flex: 1;
+}
+
+.content__title {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 67px;
+    color: #FFFFFF;
 }
 
 .content__description {
-    height: 100%;
     width: 442px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     color: #FFFFFF;
+    margin-top: 32px;
 }
 
 .content__objects {
@@ -89,7 +95,7 @@
 }
 
 @media screen and (max-width: 420px) {
-    .content__description {
+    /* .content__description {
         display: none;
-    }
+    } */
 }

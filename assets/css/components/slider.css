@@ -91,3 +91,21 @@ input[name="slides"] {
 [id^='slide']:checked + .slide {
   opacity: 1;
 }
+
+@media (max-width:767px) {
+  .slide-one {
+    background-image: url(../../img/slider/mobile-slide_1.png);
+  }
+  
+  .slide-two {
+    background-image: url(../../img/slider/mobile-slide_2.jpeg);
+  }
+  
+  .slide-three {
+    background-image: url(../../img/slider/mobile-slide_3.webp);
+  }
+  
+  .slide-four {
+    background-image: url(../../img/slider/mobile-slide_4.jpeg);
+  }
+}
