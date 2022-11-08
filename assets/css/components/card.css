@@ -9,6 +9,21 @@
     border-radius: 21px;
     width: 246px;
     height: 70px;
+    cursor: pointer;
+    background-position: 140%;
+    background-size: 220%;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.card:hover {
+    background-position: 50%;
+}
+
+.card:active {
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
 }
 
 .card__title {
@@ -16,10 +31,53 @@
     font-size: 16px;
     line-height: 20px;
     color: #000000;
+    user-select: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
 }
 
-.card__img {
+.card:hover .card__title {
+    color: #FFFFFF;
+}
+
+.card__images {
+    position: relative;
+}
+
+.card__img,
+.card__img-hover {
     margin-top: 8px;
+}
+
+.card__img-hover {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card__img,
+.card__img-hover {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.card:hover .card__img {
+    opacity: 0;
+}
+
+.card:hover .card__img-hover {
+    opacity: 1;
+}
+
+.card__wildberries {
+    background-image: radial-gradient(circle at bottom, #C711A9 140px, transparent 0%);
+    background-image: -webkit-radial-gradient(circle at bottom, #C711A9 140px, transparent 0%);
+}
+
+.card__ozon {
+    background-image: radial-gradient(circle at bottom, #0069FF 140px, transparent 0%);
+    background-image: -webkit-radial-gradient(circle at bottom, #0069FF 140px, transparent 0%);
 }
 
 @media (max-width:767px) {

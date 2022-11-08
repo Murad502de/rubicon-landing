@@ -49,6 +49,11 @@
     margin-left: 0;
 }
 
+.content__privacy {
+    margin-top: 32px;
+    margin-bottom: 14px;
+}
+
 @media screen and (max-width: 850px) {
     .content__socials {
         margin-bottom: 22px;
@@ -63,11 +68,19 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .content__privacy {
+        margin: 24px 0;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .content__shops {
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    .content__shops .card {
+        margin-left: 0;
     }
 
     .content__description {
