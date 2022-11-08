@@ -11,7 +11,7 @@
     height: 70px;
     cursor: pointer;
     background-position: 140%;
-    background-size: 225%;
+    background-size: 290%;
     transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
 }
@@ -71,13 +71,13 @@
 }
 
 .card__wildberries {
-    background-image: radial-gradient(circle at bottom, #C711A9 150px, transparent 0%);
-    background-image: -webkit-radial-gradient(circle at bottom, #C711A9 150px, transparent 0%);
+    background-image: radial-gradient(circle at bottom, #C711A9 170px, transparent 0%);
+    background-image: -webkit-radial-gradient(circle at bottom, #C711A9 170px, transparent 0%);
 }
 
 .card__ozon {
-    background-image: radial-gradient(circle at bottom, #0069FF 150px, transparent 0%);
-    background-image: -webkit-radial-gradient(circle at bottom, #0069FF 150px, transparent 0%);
+    background-image: radial-gradient(circle at bottom, #0069FF 170px, transparent 0%);
+    background-image: -webkit-radial-gradient(circle at bottom, #0069FF 170px, transparent 0%);
 }
 
 @media (max-width:767px) {
