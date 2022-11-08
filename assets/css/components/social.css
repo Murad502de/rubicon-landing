@@ -1,11 +1,23 @@
 .social {
-    width: 24px;
-    height: 24px; 
+    position: relative;
+    width: 28px;
+    height: 28px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
-.social:first-child{
+.social__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.social:hover .social__icon {
+    top: -14px;
+}
+
+.social:first-child {
     margin-left: 0;
 }
-
-
