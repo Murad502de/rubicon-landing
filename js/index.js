@@ -1,3 +1,3 @@
 window.onload = (event) => {
-  setInterval(setSlideAutomatic, 30000);
+  setInterval(setSlideAutomatic, 5000);
 };
