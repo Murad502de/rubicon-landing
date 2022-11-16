@@ -20,7 +20,8 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    flex: 1;
+    max-width: 1095px;
 }
 
 .navbar--list-mobile {
@@ -48,18 +49,21 @@
     color: #000000;
     mix-blend-mode: normal;
     opacity: 0.8;
+    transition: all .2s ease;
+}
+
+.navbar--list__item:hover {
+    color: #AD1236 !important;
 }
 
 .navbar--list__item--link {
     color: inherit;
-    /* white-space: nowrap; */
+    white-space: nowrap;
 }
 
 .navbar--list__item--active {
     color: #AD1236 !important;
     font-weight: 700;
-    mix-blend-mode: normal;
-    opacity: 0.8;
 }
 
 .navbar--list__item_first {
