@@ -20,6 +20,12 @@
     background-position: 50%;
 }
 
+.card:active {
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+}
+
 .card_clicked {
     -webkit-transform: scale(.95);
     -ms-transform: scale(.95);

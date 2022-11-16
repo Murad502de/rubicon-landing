@@ -3,5 +3,5 @@ const onCardClicked = (card) => {
 
   setTimeout(() => {
     document.querySelector(`.card__${card}`).classList.remove('card_clicked');
-  }, 1000);
+  }, 200);
 };
