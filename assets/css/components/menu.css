@@ -68,10 +68,35 @@
   opacity: .7;
 }
 
+.menu__footer .content__socials {
+  margin: 0;
+}
+
+.menu__footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.menu__footer .content__socials .social {
+  width: 32px;
+  height: 32px;
+}
+
 .menu--content__privacy {
   font-weight: 500;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
   color: #000000;
+  margin-top: 22px;
+}
+
+.menu_open .menu__footer {
+  opacity: 1;
+  transition: all 1s ease-in-out;
 }
