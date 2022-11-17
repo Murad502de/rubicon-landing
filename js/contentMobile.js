@@ -1,5 +1,6 @@
 const MOB_NEXT = 'next';
 const MOB_PREV = 'prev';
+let mobileChangeDirection = null;
 
 let xDown = null;
 let yDown = null;
@@ -31,8 +32,10 @@ function handleTouchEnd(evt) {
   const offsetHeight = Number(content.offsetHeight)
   const scrolled = scrollTop + offsetHeight;
 
+  console.debug('scrollContent', scrollTop, offsetHeight, `${scrolled} : ${scrollHeight}`); //DELETE
+
   if (scrolled >= scrollHeight || !scrollTop) {
-    switch (getMobileChangeDirection(scrollTop, scrolled, scrollHeight)) {
+    switch (mobileChangeDirection) {
       case MOB_NEXT:
         setNextSlide();
         break;
@@ -42,9 +45,12 @@ function handleTouchEnd(evt) {
         break;
 
       default:
+        console.debug('default', mobileChangeDirection); //DELETE
         break;
     }
   }
+
+  mobileChangeDirection = null;
 };
 function handleTouchMove(evt) {
   if (!xDown || !yDown) {
@@ -62,7 +68,13 @@ function handleTouchMove(evt) {
     }
   } else {
     if (yDiff > 0) {
+      console.debug('up'); //DELETE
+
+      mobileChangeDirection = MOB_NEXT;
     } else {
+      console.debug('down'); //DELETE
+
+      mobileChangeDirection = MOB_PREV;
     }
   }
 
