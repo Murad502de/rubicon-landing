@@ -1,3 +1,7 @@
 window.onload = (event) => {
-  setInterval(setSlideAutomatic, 5000);
+  setSliderInterval();
+  document.addEventListener('wheel', scrollContent);
+  document.addEventListener('touchstart', handleTouchStart, false);
+  document.addEventListener('touchend', handleTouchEnd, false);
+  document.addEventListener('touchmove', handleTouchMove, false);
 };
