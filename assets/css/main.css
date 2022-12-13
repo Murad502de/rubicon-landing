@@ -9,15 +9,18 @@
 }
 
 .content__title {
-    font-weight: 400;
+    font-family: "HelveticaNeueCondensed";
+    font-weight: 700;
+    max-width: 835px;
     font-size: 56px;
     line-height: 67px;
     color: #FFFFFF;
 }
 
 .content__description {
-    width: 442px;
+    font-family: 'HelveticaNeueCyr';
     font-weight: 500;
+    max-width: 807px;
     font-size: 18px;
     line-height: 26px;
     color: #FFFFFF;
@@ -88,8 +91,14 @@
         margin-left: 0;
     }
 
+    .content__title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
     .content__description {
-        width: 280px;
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 

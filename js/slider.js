@@ -30,7 +30,7 @@ const resetSliderInterval = () => {
   clearInterval(sliderInterval);
 };
 const setNextSlide = () => {
-  resetSliderInterval();
+  // resetSliderInterval();
 
   let count = document.querySelectorAll('.slider__label').length;
   let active = document.querySelector('.slider__label_clicked');
@@ -41,10 +41,10 @@ const setNextSlide = () => {
     document.querySelectorAll('.slider__label')[0].click();
   }
 
-  setSliderInterval();
+  // setSliderInterval();
 };
 const setPrevtSlide = () => {
-  resetSliderInterval();
+  // resetSliderInterval();
 
   let count = document.querySelectorAll('.slider__label').length;
   let active = document.querySelector('.slider__label_clicked');
@@ -55,5 +55,5 @@ const setPrevtSlide = () => {
     document.querySelector(`label[for="slide-${count}"]`).click();
   }
 
-  setSliderInterval();
+  // setSliderInterval();
 };
