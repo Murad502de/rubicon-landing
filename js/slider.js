@@ -1,6 +1,8 @@
 let sliderInterval = null;
 
 const setSlide = (slide) => {
+  resetSliderInterval();
+
   document.querySelectorAll('.slider__label').forEach((item) => {
     if (Number(slide) === Number(item.getAttribute('id'))) {
       item.classList.add('slider__label_clicked');
@@ -8,6 +10,8 @@ const setSlide = (slide) => {
       item.classList.remove('slider__label_clicked');
     }
   });
+
+  setSliderInterval();
 };
 const setSlideAutomatic = () => {
   let count = document.querySelectorAll('.slider__label').length;
