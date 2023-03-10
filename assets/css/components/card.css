@@ -48,6 +48,7 @@
 
 .card__images {
     position: relative;
+    user-select: none;
 }
 
 .card__img,
