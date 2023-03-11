@@ -1,0 +1,137 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    padding: 0 48px;
+    flex: 1;
+}
+
+.content--contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.content--contacts__item:last-child {
+    margin-left: 48px;
+}
+
+.content__title {
+    font-family: "HelveticaNeueCondensed";
+    font-weight: 700;
+    max-width: 835px;
+    font-size: 56px;
+    line-height: 67px;
+    color: #FFFFFF;
+}
+
+.content__description {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 500;
+    max-width: 807px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+.content__objects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__socials {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.content__shops {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.content__shops .card {
+    margin-left: 48px;
+}
+
+.content__shops .card:first-child {
+    margin-left: 0;
+}
+
+.content__privacy {
+    margin-top: 32px;
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width: 850px) {
+    .content__socials {
+        margin-top: 60px;
+    }
+
+    .content__objects {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content__privacy {
+        margin: 24px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content--contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .content--contacts__item:last-child {
+        margin-left: 0;
+    }
+
+    .content--contacts__item {
+        margin-top: 48px;
+    }
+
+    .content__shops {
+        flex-direction: column;
+    }
+
+    .content__shops .card {
+        margin-left: 0;
+    }
+
+    .content__title {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .content__description {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    /* .content__description {
+        display: none;
+    } */
+}
