@@ -7,8 +7,8 @@
 #nav-icon2,
 #nav-icon3,
 #nav-icon4 {
-  width: 45px;
-  height: 30px;
+  width: 27px;
+  height: 19px;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -26,7 +26,7 @@
 #nav-icon4 span {
   display: block;
   position: absolute;
-  height: 7px;
+  height: 4px;
   width: 100%;
   background: #000000;
   border-radius: 9px;
@@ -47,15 +47,15 @@
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 12px;
+  top: 7px;
 }
 
 #nav-icon1 span:nth-child(3) {
-  top: 24px;
+  top: 14px;
 }
 
 #nav-icon1.open span:nth-child(1) {
-  top: 12px;
+  top: 7px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -68,7 +68,7 @@
 }
 
 #nav-icon1.open span:nth-child(3) {
-  top: 12px;
+  top: 7px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);

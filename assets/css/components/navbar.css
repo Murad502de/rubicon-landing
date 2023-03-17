@@ -8,7 +8,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    padding: 26px 0 26px 0;
+    padding: 14px 0;
 }
 
 .navbar--list {
@@ -38,6 +38,11 @@
 .navbar--list-mobile__burger,
 .navbar--list-mobile__logo {
     cursor: pointer;
+}
+
+.navbar--list-mobile__logo {
+    width: 86px;
+    height: 42px;
 }
 
 .navbar--list__item {
